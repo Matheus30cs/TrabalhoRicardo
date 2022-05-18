@@ -1,0 +1,280 @@
+/*Folha de Estilo*/
+
+.wall:target{
+    display: block;
+}
+
+p{
+  font-family: Berlin Sans FB Demi;
+  font-size: 20px;
+}
+
+body{
+    margin:0px;
+    background-color: rgb(255, 255, 255);
+    background-image: url("../img/fundo.jpg");
+    background-repeat: repeat-x;  
+    font-family: Verdana, Arial, sans-serif;
+    text-align: justify;
+}
+
+h1{
+    margin: 0px;  
+    color: blue;
+    font-family: 'Verdana', cursive;
+    text-align: center;
+}
+h2{
+    margin: 0px;  
+    color: white;
+    font-family: 'Verdana', cursive;
+    text-align: center;
+}
+/*Container Principal*/
+div#principal{
+    margin:0 auto;
+    background-color: white;
+    width:980px;
+    height:1000px;   
+}
+div#principal2{
+    margin:0 auto;
+    background-color: white;
+    width:980px;
+    height:2350px;   
+}
+/*================ Container linha - topo ==================*/
+div#topo{
+    width:980px;
+    height:100px; 
+    background-color: white;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+div#tplogo{
+    width:200px;
+    height:100px; 
+    float: left;
+}
+
+
+div#tpcentro{
+    width:700px;
+    height:100px; 
+    float: left;
+}
+
+a:link{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+div#tpemail{
+    width:80px;
+    height:100px; 
+    float: left;
+}
+
+/*=============== Container linha - menu ==================*/
+div#menu{
+    width:976px;
+    height:51px; 
+    background-color: rgb(69,145,209);
+    background-image: url('../img/rodape.jpg');
+    color: white;
+    padding:2px;
+}
+/*=== Configurações da Lista Não-Ordenada =====*/
+ul{
+    margin-top: 0px;
+    margin-left: 110px;
+    padding:0px;
+}
+
+ul li{
+    list-style-type: none;
+    display:inline;
+    padding-left:15px;
+    padding-right:15px;
+    margin-left: 20px;
+    width: 196px;
+    height: 40px; 
+    font-size:35px;
+}
+
+ul li a{
+    color: white;
+}
+ul li a:hover{
+    color: yellow;
+    background-color: rgb(0, 119, 255);
+}
+
+
+/*=============== Container linha - imagem capa =============*/
+div#imgcapa{
+    width:980px;
+    height:348px;  
+    margin-top: 2px;
+    margin-bottom:2px; 
+}
+
+div#imgcapa2{
+    width:480px;
+    height:348px;  
+    display: inline-block;
+}
+
+div#imgcapa3{
+    width:380px;
+    height:348px;  
+    margin-top: 2px;
+    margin-bottom:2px; 
+}
+/*================= Container linha - Corpo ==================*/
+div#corpo{
+    width:960px;
+    height:450px;   
+    padding: 10px;
+    background-image: url('../img/BG1.jpg');
+}
+div#corpo2{
+    width:960px;
+    height:850px;   
+    padding: 10px;
+    background-image: url('../img/BG1.jpg');
+}
+
+div#cpcol{
+    padding:10px;
+    height:200px;   
+    width:300px;
+    float: left;
+    background-color: white;
+    background-image: url('../img/corpo.jpg');
+}
+
+#imgmat{
+    position: relative;
+    left: 35px;
+    top: 30px;
+}
+
+/*================= Container - Corpo SUGPAGINA ==================*/
+div#corpo_subpagina{
+    width:960px;
+    height:798px;   
+    padding: 10px;
+    background-color: white;
+}
+
+#bola{
+    margin-left: 220px;
+    margin-top: 22px;
+}
+#escrita{
+    margin-left: 200px;
+    margin-top: 0px;
+}
+#corpo_subpagina2{
+    width:960px;
+    height:2398px;   
+    padding: 20px;
+    background-color: white;
+}
+
+div#corpo_subpagina3{
+    width:960px;
+    height:848px;   
+    padding: 10px;
+    background-color: white;
+}
+
+#corpo_subpagina4{
+    width:960px;
+    height:948px;   
+    padding: 10px;
+    background-color: white;
+}
+
+#corpo_subpagina5{
+    width:960px;
+    height:1298px;   
+    padding: 20px;
+    background-color: white;
+}
+
+#last_image{
+    margin-top: -252px;
+    margin-left: 559px;
+}
+#last_image2{
+    margin-top: -528px;
+    margin-left: 559px;
+}
+#mid_image{
+  text-align: center;
+}
+/*================= Container linha - Rodapé ================*/
+footer, #rodape{
+    height:50px;   
+    width:980px;
+    background-image: url('../img/rodape1.jpg')
+}
+
+footer, #rodape2{
+    height:80px;   
+    width:980px;
+    background-image: url('../img/rodape1.jpg');
+}
+
+div#rdp1{
+    margin-left: -140px;
+    height:100px;   
+    width:630px;
+    float:left;
+    color: white;
+}
+
+div#rdp2{
+    height:100px;   
+    width:250px;
+    float:left;
+}
+
+div#rdp3{
+    height:100px;   
+    width:380px;
+    float:left;
+}
+
+div#rdp4{
+    margin-left: -140px;
+    height:100px;   
+    width:630px;
+    float:left;
+    top:-20px;
+}
+
+.Imagem{
+
+  display: table-cell;
+  float: left;
+}
+
+div#tituloProduto{
+    margin-right: 100px;
+    float:right;
+}
+
+div#tituloProduto2{
+    margin-right: 75px;
+    float:right;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+        <title>King-Eletros</title>
+        <meta charset="UTF-8">        
+        <link href="/static/css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel='shortcut icon' href='/static/img/cropped-Design-sem-nome-4.png' type='image/x-icon'>
+    </head>
+    <body>
+        <div id="principal">
+
+            <!-- =========== Container Topo ================ -->
+            <div id="topo">
+                <div id="tplogo">
+                    <img src="/static/img/KingEletros.png">
+                </div>
+
+                <div id="tpcentro">                             
+
+                </div>
+
+                <div id="tpemail">
+                      
+                </div>
+            </div>             
+
+            <!-- ============  Container do Menu  =========== -->
+            <div id="menu">
+                <ul><li><a href="/" target="_parent">Inicio</a></li>
+                    <li><a href="" target="_parent">Produtos</a></li>
+                    <li><a href="Login.html" target="_parent">Login</a></li>
+                    <li><a href="Cadastro.html" target="_blank">Cadastro</a></li>
+                </ul>
+            </div> 
+            
+            <!-- ============  Container do Corpo da Sub-Pagina =========== -->
+            <div id="corpo_subpagina">
+            <h1> PRODUTOS DISPONÍVEIS </h1>
+<br></br>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/Produtos/Fogao">
+      <img src="/static/img/Fogao/Fogao.webp" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Fogão</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/Produtos/Geladeira">
+      <img src="/static/img/Geladeira/Geladeira.webp" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Geladeira</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/Produtos/Lavadora">
+      <img src="/static/img/Lavadora/Lavadora de Roupas.webp" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Lavadora de Roupas</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/Produtos/Microondas">
+      <img src="/static/img/Microondas/Micro-ondas.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Micro-Ondas</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+<!--  
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
+
+  
+              <div id="mid_image">
+                <a href="Fogao.html"><img src="img/Fogao/Fogao.webp"alt="" width="700px" health="700px"/></a>
+                <a href="Geladeira.html"><img src="img/Geladeira/Geladeira.webp"alt="" width="700px" health="700px"/></a>
+                <a href="Lavadora.html"><img src="img/Lavadora/Lavadora de Roupas.webp"alt="" width="700px" health="700px"/></a>
+              </div> 
+                <a href="Microondas.html"><img src="img/Microondas/Micro-ondas.jpg"alt="" width="700px" health="700px"/></a>
+
+
+            <!-- ============  Container do Rodape  =========== -->
+           <!-- <footer id="rodape">
+                <h2>© 2022 Projetos do Matheus</h2>
+            </footer> -->
+        </div>
+    </body>
+</html>

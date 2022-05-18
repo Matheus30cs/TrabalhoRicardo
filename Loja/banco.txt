@@ -1,0 +1,30 @@
+You have successfully created a new database. The details are below.
+
+Username: 6DlRBOMW44
+
+Database name: 6DlRBOMW44
+
+Password: 409Nf6Egy7
+
+Server: remotemysql.com
+
+Port: 3306
+
+These are the username and password to log in to your database and phpMyAdmin
+
+Make sure you keep your password secure. Ensure you keep back ups of your database in case it gets deleted.
+
+conexão: cd snipetbox/
+
+go run ./cmd/web/
+
+conexão banco: go get github.com/go-sql-driver/mysql@v1
+
+Conectar o Go com o Banco.
+username:password@protocol(address)/dbname?param=value
+
+6DlRBOMW44:409Nf6Egy7@tcp(remotemysql.com)/6DlRBOMW44?parseTime=true
+
+
+criar usuário de banco no console:
+curl -i -X POST http://localhost:4000/snippet/create
