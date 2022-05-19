@@ -81,12 +81,12 @@ input[type="submit"] {
   margin-top: 30px;
   cursor: pointer;
   color: #FFF;
-  background-color: #08558B;
+  background-color: #13be3e;
   font-weight: bold;
 }
 
 input[type="submit"]:hover {
-  background-color: #1B223C;
+  background-color: #0b570a;
   transition: .5s;
 }
 

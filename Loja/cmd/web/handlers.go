@@ -172,6 +172,114 @@ func(app *application) Microondas (rw http.ResponseWriter, r *http.Request){
   }
 }
 
+func(app *application) CompraFogao (rw http.ResponseWriter, r *http.Request){
+  if r.URL.Path != "/Produtos/Fogao/Compra"{
+    app.notFound(rw)
+    return
+  }
+
+  snippets, err := app.snippets.Latest()
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+
+  files := []string{
+    "./ui/html/CompraFogao.html",
+  }
+  ts, err := template.ParseFiles(files...)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+  err = ts.Execute(rw, snippets)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+}
+
+func(app *application) CompraGeladeira (rw http.ResponseWriter, r *http.Request){
+  if r.URL.Path != "/Produtos/Geladeira/Compra"{
+    app.notFound(rw)
+    return
+  }
+
+  snippets, err := app.snippets.Latest()
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+
+  files := []string{
+    "./ui/html/CompraGeladeira.html",
+  }
+  ts, err := template.ParseFiles(files...)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+  err = ts.Execute(rw, snippets)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+}
+
+func(app *application) CompraLavadora (rw http.ResponseWriter, r *http.Request){
+  if r.URL.Path != "/Produtos/Lavadora/Compra"{
+    app.notFound(rw)
+    return
+  }
+
+  snippets, err := app.snippets.Latest()
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+
+  files := []string{
+    "./ui/html/CompraLavadora.html",
+  }
+  ts, err := template.ParseFiles(files...)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+  err = ts.Execute(rw, snippets)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+}
+
+func(app *application) CompraMicroondas (rw http.ResponseWriter, r *http.Request){
+  if r.URL.Path != "/Produtos/Microondas/Compra"{
+    app.notFound(rw)
+    return
+  }
+
+  snippets, err := app.snippets.Latest()
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+
+  files := []string{
+    "./ui/html/CompraMicroondas.html",
+  }
+  ts, err := template.ParseFiles(files...)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+  err = ts.Execute(rw, snippets)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+}
+
 //http://localhost:4000/snippet?id=123
 func(app *application) showSnippet(rw http.ResponseWriter, r *http.Request){
   id, err := strconv.Atoi(r.URL.Query().Get("id"))
