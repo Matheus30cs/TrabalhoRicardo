@@ -15,9 +15,9 @@ type Snippet struct{
   Expires time.Time
 }
 
-/*type Produto struct{
+type Produto struct{
   ID int
   Nome string
   CEP string
   Preco float64
-}*/
+}
