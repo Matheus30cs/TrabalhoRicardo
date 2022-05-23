@@ -280,6 +280,33 @@ func(app *application) CompraMicroondas (rw http.ResponseWriter, r *http.Request
   }
 }
 
+func(app *application) ConfirmacaoCompra (rw http.ResponseWriter, r *http.Request){
+  if r.URL.Path != "/Produtos/Compra/Confirmacao"{
+    app.notFound(rw)
+    return
+  }
+
+  snippets, err := app.snippets.Latest()
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+
+  files := []string{
+    "./ui/html/ConfirmacaoCompra.html",
+  }
+  ts, err := template.ParseFiles(files...)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+  err = ts.Execute(rw, snippets)
+  if err != nil{
+    app.serverError(rw, err)
+    return
+  }
+}
+
 //http://localhost:4000/snippet?id=123
 func(app *application) showSnippet(rw http.ResponseWriter, r *http.Request){
   id, err := strconv.Atoi(r.URL.Query().Get("id"))

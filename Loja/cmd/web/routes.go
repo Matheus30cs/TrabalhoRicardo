@@ -14,6 +14,7 @@ func (app *application) routes() *http.ServeMux {
   mux.HandleFunc("/Produtos/Lavadora/Compra", app.CompraLavadora)
   mux.HandleFunc("/Produtos/Microondas", app.Microondas)
   mux.HandleFunc("/Produtos/Microondas/Compra", app.CompraMicroondas)
+  mux.HandleFunc("/Produtos/Compra/Confirmacao", app.ConfirmacaoCompra)
   mux.HandleFunc("/snippet", app.showSnippet)
   mux.HandleFunc("/snippet/create", app.createSnippet)
   fileServer := http.FileServer(http.Dir("./ui/static/"))
